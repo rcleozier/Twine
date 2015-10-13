@@ -1,0 +1,22 @@
+{
+    "name": "rcleozier/twine",
+    "description": "A string manipulation library and OO wrapper",
+    "keywords": [
+        "string", "manipulation", "utility", "methods", "utf-8"
+    ],
+    "homepage": "https://github.com/rcleozier/Twine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robbins Cleozier",
+            "email": "rcleozier@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "support": {
+        "issues": "https://github.com/rcleozier/Twine/issues",
+        "source": "https://github.com/rcleozier/Twine"
+    }
+}

@@ -1,8 +1,8 @@
 <?php
 
-namespace StringManip;
+namespace Twine;
 
-class String {
+class Twine {
 
     /**
      * Trims whitespace from a string
@@ -199,7 +199,7 @@ class String {
      *
      * @return string
      */
-	public static function camelCase($string, $strPosition = [])
+	public static function camelize($string, $strPosition = [])
 	{
         $str = preg_replace('/[^a-z0-9' . implode("", $strPosition) . ']+/i', ' ', $string);
         $str = trim($str);
@@ -293,10 +293,10 @@ class String {
     }
 }
 
-var_dump(String::slugify("this will be a slug"));
-var_dump(String::isValidUrl("http://www.github.com"));
-var_dump(String::isValidEmail("coder@github.com"));
-var_dump(String::camelCase("camelCase this text"));
-var_dump(String::shuffle("shuffle this text"));
-var_dump(String::random(5));
+var_dump(Twine::slugify("this will be a slug"));
+var_dump(Twine::isValidUrl("http://www.github.com"));
+var_dump(Twine::isValidEmail("coder@github.com"));
+var_dump(Twine::camelize("camelCase this text"));
+var_dump(Twine::shuffle("shuffle this text"));
+var_dump(Twine::random(5));
 ?>
