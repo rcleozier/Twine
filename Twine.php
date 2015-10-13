@@ -292,11 +292,4 @@ class Twine {
         return filter_var($string, FILTER_VALIDATE_URL) !== false;
     }
 }
-
-var_dump(Twine::slugify("this will be a slug"));
-var_dump(Twine::isValidUrl("http://www.github.com"));
-var_dump(Twine::isValidEmail("coder@github.com"));
-var_dump(Twine::camelize("camelCase this text"));
-var_dump(Twine::shuffle("shuffle this text"));
-var_dump(Twine::random(5));
 ?>

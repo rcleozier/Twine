@@ -31,9 +31,13 @@ And in either case, I'd suggest using an alias.
 Below are some same usages below
 
 ```php
-String::slugify("slug me") // returns slug-me
-String::isValidUrl("http://www.github.com") // returns true
-String::isValidEmail("coder@github.com") // return true
-String::camelize("camel case this text") // returns camelCaseThisText
-String::words("camel case this text") // returns 4. The number of words in the string::random(10); // returns random 10 character string
+Twine::slugify("slug me") // returns slug-me
+Twine::isValidUrl("http://www.github.com") // returns true
+Twine::isValidEmail("coder@github.com") // return true
+Twine::camelize("camel case this text") // returns camelCaseThisText
+Twine::words("camel case this text") // returns 4. The number of words in the Twine::random(10); // returns random 10 character string
+Twine::upper("string"); // returns STRING
+Twine::length('words'); // returns 5
+Twine::position('a word', 'a'); returns // 0
+Twine::times('a cow and a bird', 'a'); // 2. returns times a word appears
 ```
