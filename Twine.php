@@ -11,7 +11,7 @@ class Twine {
      */
     public static function trim($string)
     {
-        return ltrim($string);
+        return trim($string);
     }
 
     /**
@@ -277,7 +277,7 @@ class Twine {
      *
      * @return bool
      */
-    public static function isValidEmail($string)
+    public static function validEmail($string)
     {
         return filter_var($string, FILTER_VALIDATE_EMAIL) !== false;
     }
@@ -287,7 +287,7 @@ class Twine {
      *
      * @return bool
      */
-    public static function isValidUrl($string)
+    public static function validUrl($string)
     {
         return filter_var($string, FILTER_VALIDATE_URL) !== false;
     }
